@@ -15,11 +15,19 @@
 
         public double ExibirResultado()
         {
-            if (EscolhaOperacao == 1)
+            switch (EscolhaOperacao)
             {
-                return Somar();
+                case 1: 
+                    return Somar();
+                case 2: 
+                    return Substrair();
+                case 3:
+                    return Multiplicar();
+                case 4:
+                    return Dividir();
+                default:
+                    return 0.0;
             }
-                return 1.0;
         }
         public double Somar()
         {
@@ -27,7 +35,7 @@
         }
         public double Substrair()
         {
-            return PrimeiroNumero + SegundoNumero;
+            return PrimeiroNumero - SegundoNumero;
         }
         public double Multiplicar()
         {
