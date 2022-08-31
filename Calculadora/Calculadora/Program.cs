@@ -3,11 +3,11 @@
 int escolhaOperacao, sairDoPrograma = 1;
 double primeiroNumero, segundoNumero;
 
-Console.WriteLine("Seja bem-findo a sua calculadora!");
+Console.WriteLine("Seja bem-findo a sua calculadora!\n");
 
 while (sairDoPrograma == 1)
 {
-    Console.WriteLine("\nQue operação você deseja fazer?\n " +
+    Console.WriteLine("Que operação você deseja fazer?\n " +
         "1 - Soma \n " +
         "2 - Subtração \n " +
         "3 - Multiplicação \n " +
@@ -28,4 +28,5 @@ while (sairDoPrograma == 1)
         "1 - Sim \n " +
         "2 - Não");
     sairDoPrograma = Convert.ToInt32(Console.ReadLine());
+    Console.Clear();
 }
